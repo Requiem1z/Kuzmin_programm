@@ -1,0 +1,35 @@
+int main()
+{   
+    int i;
+    double a,b,c, x1, x2;
+    float a1;
+    double d;
+    
+    a=5.1;
+    b=1;
+    c=-2;
+    printf("vvedite a:");
+    scanf("%lf",&a);
+    printf("vvedite b:");
+    scanf("%lf",&b);
+    printf("vvedite c:");
+    scanf("%lf",&c);
+    
+    d = pow(b,2) - 4*a*c;
+    printf("d= %lf", d);
+    
+    if (d>0){
+    
+    x1 = (-b-sqrt(d))/(2*a);
+    x2 = (-b+sqrt(d))/(2*a);
+    }
+    if (d<0){
+        printf("kornei net"0);
+    }
+    if (d==0){
+        printf("odin koren\n");
+    }
+    printf("x1= %lf x2=%lf",x1,x2);
+    
+    return 0;
+}
